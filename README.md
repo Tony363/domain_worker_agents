@@ -1,5 +1,203 @@
 # Synthetic Data Generation Pipeline for Domain Worker AI Tooling Preferences
 
+## Architecture Overview
+
+```mermaid
+graph TB
+    subgraph "Data Sources"
+        P["📋 Domain Worker Profiles<br/>(10 Persona Profiles)"]
+    end
+
+    subgraph "Prompt Generation Layer"
+        PG["🔄 Instruction Prompt Generator<br/>• Extract search intents<br/>• Build evaluation criteria<br/>• Domain filters (compliance, integrations)"]
+    end
+
+    subgraph "AI Agent Orchestrator"
+        direction LR
+        EA["🔍 Exa.ai Agent<br/>• Semantic neural search<br/>• Domain filtering<br/>• Result ranking"]
+        BA["🌐 Browser MCP Agent<br/>• Web scraping<br/>• Feature extraction<br/>• Compliance detection"]
+        EA <-->|"Coordinate"| BA
+    end
+
+    subgraph "Data Processing Pipeline"
+        DD["🔧 Data Processing<br/>• Deduplication<br/>• Schema validation<br/>• Metadata enrichment"]
+        EG["🧠 Embedding Generator<br/>• Jina AI v2 / OpenAI<br/>• Weighted composition<br/>• 768-dim vectors"]
+    end
+
+    subgraph "Storage Layer"
+        direction LR
+        VDB[("⚡ Vector Database<br/>(Pinecone/Weaviate)<br/>Cosine similarity search")]
+        GDB[("🕸️ Graph Database<br/>(Neo4j)<br/>Relationship queries")]
+    end
+
+    subgraph "Query & Recommendation"
+        QE["🎯 Query Engine<br/>• Vector search (60%)<br/>• Graph traversal (40%)<br/>• Hybrid ranking"]
+        RE["📊 Recommendation API<br/>• Persona-aware<br/>• Criteria filtering<br/>• Relevance scoring"]
+    end
+
+    subgraph "Output"
+        R["✨ Personalized<br/>Tool Recommendations"]
+    end
+
+    P --> PG
+    PG --> EA
+    PG --> BA
+    EA --> DD
+    BA --> DD
+    DD --> EG
+    EG --> VDB
+    EG --> GDB
+    VDB --> QE
+    GDB --> QE
+    QE --> RE
+    RE --> R
+
+    style P fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    style PG fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style EA fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style BA fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style DD fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    style EG fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    style VDB fill:#fce4ec,stroke:#880e4f,stroke-width:3px
+    style GDB fill:#fce4ec,stroke:#880e4f,stroke-width:3px
+    style QE fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    style RE fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    style R fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+```
+
+### Data Flow Stages
+
+```mermaid
+sequenceDiagram
+    participant Profile as 📋 Persona Profile
+    participant PromptGen as 🔄 Prompt Generator
+    participant Exa as 🔍 Exa.ai Agent
+    participant Browser as 🌐 Browser MCP
+    participant Process as 🔧 Data Processor
+    participant Embed as 🧠 Embedding Gen
+    participant VecDB as ⚡ Vector DB
+    participant GraphDB as 🕸️ Graph DB
+    participant Query as 🎯 Query Engine
+
+    Profile->>PromptGen: Parse use cases & criteria
+    PromptGen->>Exa: Structured search queries
+    PromptGen->>Browser: URLs + extraction schemas
+    
+    par Parallel Data Collection
+        Exa->>Exa: Semantic neural search
+        Browser->>Browser: Web scraping
+    end
+    
+    Exa->>Process: Search results (URLs, snippets)
+    Browser->>Process: Tool details (features, pricing)
+    
+    Process->>Process: Deduplicate & validate
+    Process->>Embed: Cleaned tool records
+    
+    Embed->>Embed: Generate 768-dim vectors
+    
+    par Database Indexing
+        Embed->>VecDB: Store embeddings + metadata
+        Embed->>GraphDB: Create nodes + relationships
+    end
+    
+    Note over VecDB,GraphDB: Ready for queries
+    
+    Query->>VecDB: Vector similarity search
+    Query->>GraphDB: Graph traversal (persona paths)
+    Query->>Query: Hybrid scoring (60% vector + 40% graph)
+```
+
+### Database Schema Relationships
+
+```mermaid
+graph LR
+    subgraph "Vector Space (Semantic Similarity)"
+        V1["Tool A<br/>Embedding"]
+        V2["Tool B<br/>Embedding"]
+        V3["Tool C<br/>Embedding"]
+        Q["Query<br/>Embedding"]
+        Q -."cosine<br/>similarity".-> V1
+        Q -."cosine<br/>similarity".-> V2
+        Q -."cosine<br/>similarity".-> V3
+    end
+
+    subgraph "Graph Space (Relationships)"
+        direction TB
+        T1["🔧 Tool: TrialMetrics AI"]
+        T2["🔧 Tool: MedData Analyzer"]
+        P1["👤 Persona:<br/>Healthcare Scientist"]
+        C1["🛡️ Compliance: HIPAA"]
+        C2["🛡️ Compliance: FDA"]
+        I1["🔌 Integration: Epic EHR"]
+        I2["🔌 Integration: REDCap"]
+        CAT["📂 Category: Clinical NLP"]
+
+        T1 -->|COMPLIES_WITH| C1
+        T1 -->|COMPLIES_WITH| C2
+        T1 -->|INTEGRATES_WITH| I1
+        T2 -->|INTEGRATES_WITH| I2
+        T2 -->|COMPLIES_WITH| C1
+        P1 -->|REQUIRES| C1
+        P1 -->|USES_SYSTEM| I1
+        P1 -->|PREFERS_CATEGORY| CAT
+        T1 -->|BELONGS_TO| CAT
+    end
+
+    style V1 fill:#e3f2fd,stroke:#1565c0
+    style V2 fill:#e3f2fd,stroke:#1565c0
+    style V3 fill:#e3f2fd,stroke:#1565c0
+    style Q fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+    style T1 fill:#c8e6c9,stroke:#2e7d32
+    style T2 fill:#c8e6c9,stroke:#2e7d32
+    style P1 fill:#ffccbc,stroke:#d84315
+    style C1 fill:#f8bbd0,stroke:#c2185b
+    style C2 fill:#f8bbd0,stroke:#c2185b
+    style I1 fill:#b2dfdb,stroke:#00695c
+    style I2 fill:#b2dfdb,stroke:#00695c
+    style CAT fill:#d1c4e9,stroke:#512da8
+```
+
+### Hybrid Recommendation Algorithm
+
+```mermaid
+flowchart TD
+    Start(["User Query:<br/>'HIPAA compliant<br/>clinical trial tools'"]) --> Parse["Parse Query<br/>Extract: domain, compliance, integrations"]
+    
+    Parse --> Embed["Generate Query Embedding<br/>(768-dim vector)"]
+    
+    Embed --> ParallelSearch{"Parallel Search"}
+    
+    ParallelSearch --> VectorSearch["⚡ Vector Search<br/>• Cosine similarity<br/>• Top 20 results<br/>• Metadata filtering"]
+    ParallelSearch --> GraphSearch["🕸️ Graph Traversal<br/>• Persona → Compliance paths<br/>• Integration matching<br/>• Relationship scoring"]
+    
+    VectorSearch --> VectorResults["Vector Results<br/>(similarity scores)"]
+    GraphSearch --> GraphResults["Graph Results<br/>(relationship scores)"]
+    
+    VectorResults --> Merge["Hybrid Scoring<br/>60% vector + 40% graph"]
+    GraphResults --> Merge
+    
+    Merge --> Filter["Apply Criteria Filters<br/>• Critical (must-have)<br/>• High priority (boost)<br/>• Nice-to-have (optional)"]
+    
+    Filter --> Rank["Re-rank by<br/>Combined Score"]
+    
+    Rank --> Top10["Return Top 10<br/>Recommendations"]
+    
+    Top10 --> End(["Personalized Results<br/>with Match Reasons"])
+    
+    style Start fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style Parse fill:#e1f5ff,stroke:#01579b
+    style Embed fill:#f3e5f5,stroke:#4a148c
+    style VectorSearch fill:#ffebee,stroke:#c62828
+    style GraphSearch fill:#e8f5e9,stroke:#2e7d32
+    style Merge fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style Filter fill:#fce4ec,stroke:#880e4f
+    style Rank fill:#f1f8e9,stroke:#558b2f
+    style End fill:#c8e6c9,stroke:#1b5e20,stroke-width:3px
+```
+
+---
+
 ## Executive Summary
 
 This proposal outlines a systematic pipeline for generating synthetic preference data that captures how domain workers search for and evaluate AI tools. The pipeline uses AI agents connected to web search APIs (Exa.ai) and browser automation (MCP) to collect real-world AI tooling data, then indexes these as embeddings in a vector/graph database to power personalized AI tool recommendation systems.
