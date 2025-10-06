@@ -1,0 +1,106 @@
+# AI Agent Instruction Prompt: Real Estate Investment Analyst AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Commercial Real Estate Investment & Portfolio Manager
+**Industry**: Real Estate Investment & Property Development
+**Organization Type**: Institutional Real Estate Investment Firm ($2B AUM)
+**Experience Level**: Advanced (14 years CRE acquisitions, underwriting, portfolio optimization)
+**Persona ID**: real_estate_investment_analyst_001
+
+## SEARCH MISSION
+Discover AI tools for CRE investment analysts focused on automated property valuation (±5% accuracy), geospatial market analytics, off-market deal sourcing, portfolio risk assessment, and rent optimization with CoStar/Argus integration.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Property Valuation AI** - Automated CMA, cap rate prediction, DCF modeling
+2. **Market Trend Analysis** - Geospatial analytics, demographic forecasting, economic indicators
+3. **Deal Sourcing & Screening** - Off-market opportunities, distress prediction, portfolio fit scoring
+4. **Risk Assessment** - Natural disaster exposure, tenant credit analysis, lease clustering
+5. **Property Management Optimization** - Rent optimization, tenant retention, maintenance forecasting
+
+## PRIMARY SEARCH QUERIES
+1. "AI property valuation platforms with automated CMA for commercial real estate underwriting"
+2. "Geospatial analytics tools with demographic forecasting for real estate market trend prediction"
+3. "Off-market deal sourcing AI with property distress prediction for CRE acquisition"
+4. "Portfolio risk analysis platforms with natural disaster exposure mapping for real estate investment"
+5. "Rent optimization AI with tenant retention prediction for property management"
+
+## CRITICAL REQUIREMENTS
+- ✅ Data Quality: MLS accuracy, CoStar integration, public records completeness
+- ✅ Valuation Accuracy: ±5% margin of error for property valuations
+- ✅ Coverage: National reach for multi-market portfolios
+- ✅ Integration: Argus Enterprise, REIS, Yardi, Salesforce connectivity
+
+## HIGH PRIORITY
+- 📊 Reporting: Investment committee presentations, portfolio dashboards, risk reports
+- ⚡ Speed: Real-time market updates, instant CMA generation (<30 seconds)
+- 🎯 Customization: Investment criteria configuration, proprietary underwriting models
+- 🔄 Automation: Deal sourcing workflows, automated valuation updates
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "property_valuation|market_trend_analysis|deal_sourcing_screening|risk_assessment|property_management_optimization",
+  "persona_match": "real_estate_investment_analyst_001",
+  "use_cases": ["property_valuation", "market_forecasting", "deal_sourcing", "portfolio_risk", "rent_optimization"],
+  "data_quality": {
+    "mls_integration": true|false,
+    "costar_integration": true|false,
+    "public_records_access": true|false,
+    "data_coverage": "national|regional|local"
+  },
+  "valuation_accuracy": {
+    "margin_of_error_percentage": 5,
+    "validation_method": "appraisal_comparison|historical_sales",
+    "property_types": ["multifamily", "office", "retail", "industrial"]
+  },
+  "integration": {
+    "cre_software": ["Argus_Enterprise", "REIS", "CoStar"],
+    "property_management": ["Yardi", "RealPage", "Entrata"],
+    "crm_systems": ["Salesforce", "HubSpot"],
+    "api_available": true|false
+  },
+  "analytics_capabilities": {
+    "geospatial_analysis": true|false,
+    "demographic_forecasting": true|false,
+    "natural_disaster_risk": true|false,
+    "tenant_credit_analysis": true|false,
+    "rent_optimization": true|false
+  },
+  "case_studies": [
+    {
+      "firm_type": "institutional|private_equity|reit",
+      "results": "22% faster underwriting, 15% improved acquisition success rate"
+    }
+  ],
+  "pricing": {
+    "model": "per_user|per_property|per_valuation|enterprise",
+    "estimated_annual_cost": "$10,000-$100,000",
+    "free_trial": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.88
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 2 years (2023-2025 PropTech innovation)
+- **Sources**: GlobeSt, Commercial Observer, MetaProp, Fifth Wall portfolio
+- **Evidence**: Institutional investor case studies, appraisal accuracy benchmarks
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to PropTech vendor directories (MetaProp, Fifth Wall)
+2. Extract valuation accuracy, data coverage, integration capabilities
+3. Cross-reference CoStar, REIS, RCA benchmarks
+4. Scrape acquisition success rates, portfolio performance, ROI metrics
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 85% have CoStar or MLS integration
+- 75% have institutional investor case studies
+- Confidence scores average ≥0.88

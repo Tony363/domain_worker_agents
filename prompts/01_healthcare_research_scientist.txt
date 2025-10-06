@@ -1,0 +1,232 @@
+# AI Agent Instruction Prompt: Healthcare Research Scientist AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Clinical Research Scientist
+**Industry**: Healthcare & Life Sciences
+**Organization Type**: Academic Medical Center
+**Experience Level**: Advanced (8 years in translational medicine)
+**Persona ID**: healthcare_research_scientist_001
+
+## SEARCH MISSION
+You are tasked with discovering, evaluating, and cataloging AI tools for healthcare research scientists conducting clinical research, drug discovery, and regulatory compliance work. Your goal is to identify tools that meet medical-grade accuracy standards, HIPAA compliance requirements, and integrate with healthcare systems (Epic, Cerner, REDCap).
+
+## PRIMARY AI TOOL CATEGORIES TO RESEARCH
+1. **Medical Literature AI** - PubMed integration, systematic review automation, citation management
+2. **Clinical Data Analysis** - EHR data processing, patient outcome prediction, biostatistics AI
+3. **Drug Discovery Tools** - Molecular modeling, protein structure prediction, compound screening
+4. **Regulatory Compliance** - FDA submission assistance, clinical trial documentation, IRB protocol generation
+5. **Research Writing Assistants** - Scientific manuscript drafting, grant proposal optimization
+
+## PRIMARY SEARCH QUERIES (Use These Exact Queries)
+1. "FDA-approved AI clinical decision support tools with peer-reviewed validation studies"
+2. "HIPAA-compliant machine learning platforms for electronic health record analysis"
+3. "Automated systematic literature review tools for biomedical research meta-analysis"
+4. "Explainable AI drug discovery platforms with molecular docking capabilities"
+5. "Grant writing assistance AI for NIH R01 proposals clinical research"
+
+## EVALUATION CRITERIA FOR DISCOVERED TOOLS
+
+### CRITICAL REQUIREMENTS (Non-Negotiable - Must Have)
+- ✅ **Regulatory Compliance**: FDA clearance, HIPAA compliance, IRB approval documentation
+- ✅ **Clinical Validation**: Peer-reviewed publications, prospective study evidence, benchmark datasets
+- ✅ **Data Security**: End-to-end encryption, audit trails, HIPAA-compliant de-identification
+- ✅ **Explainability**: Interpretable AI outputs for clinical decision-making and peer review
+
+### HIGH PRIORITY REQUIREMENTS (Strongly Preferred)
+- ⚡ **System Integration**: Epic, Cerner, REDCap, PACS, laboratory information systems
+- 🎯 **Accuracy Benchmarks**: >98% accuracy for clinical applications, AUC >0.90 for diagnostic tasks
+- 🤝 **Multi-Institutional Support**: Research coordination, CTMS integration, version control
+- 📊 **Regulatory Reporting**: CONSORT diagram generation, statistical analysis plan automation
+
+### NICE-TO-HAVE FEATURES (Bonus Considerations)
+- 💰 **Academic Pricing**: Institutional licenses, educational discounts, per-researcher pricing
+- 🚀 **Real-Time Processing**: <2 second inference for clinical decision support
+- 📚 **Medical Pre-Training**: Domain-specific models trained on medical terminology and literature
+
+## DATA EXTRACTION INSTRUCTIONS
+
+For each AI tool discovered, extract and structure the following information:
+
+### TOOL IDENTIFICATION
+- Tool name and vendor
+- Product category (match to 5 primary categories above)
+- Primary use case (literature review, clinical prediction, imaging analysis, etc.)
+- Website URL and documentation links
+
+### COMPLIANCE & VALIDATION
+- FDA clearance status (510(k) number if applicable)
+- HIPAA compliance certification (documentation URL)
+- Peer-reviewed validation studies (PubMed IDs, journal citations)
+- Clinical accuracy benchmarks (AUC, sensitivity, specificity metrics)
+
+### INTEGRATION & TECHNICAL SPECS
+- Supported EHR systems (Epic, Cerner, etc.)
+- API availability (HL7, FHIR, RESTful APIs)
+- Data format compatibility (DICOM, CSV, JSON)
+- Deployment options (cloud, on-premise, hybrid)
+
+### PRICING & LICENSING
+- Pricing model (per-user, per-study, institutional license)
+- Academic pricing availability
+- Free trial or demo options
+- Contract terms (annual, multi-year)
+
+### EXPLAINABILITY & TRANSPARENCY
+- Model interpretability features (SHAP, LIME, attention maps)
+- Audit trail capabilities
+- Regulatory documentation support
+- Clinical decision reasoning transparency
+
+## SEARCH FILTERS & PARAMETERS
+
+### Date Range Priority
+- **Last 3 years** (prioritize recent FDA approvals and regulatory updates)
+- Focus on tools with 2022-2025 validation studies
+
+### Source Authority Requirements
+- Peer-reviewed medical journals (JAMA, NEJM, Nature Medicine)
+- FDA databases and clearance announcements
+- Academic medical center case studies and implementations
+- HIMSS, AMIA, and medical AI conference proceedings
+
+### Evidence Level Hierarchy (Prioritize in this order)
+1. Prospective clinical trials with published results
+2. Systematic reviews and meta-analyses
+3. Retrospective validation studies
+4. Case studies from major academic medical centers
+5. Vendor white papers with independent validation
+
+### Semantic Search Clusters (Use for vector search optimization)
+- "clinical validation regulatory approval medical AI"
+- "healthcare machine learning HIPAA compliance"
+- "biomedical research automation peer reviewed"
+- "FDA cleared diagnostic AI prospective study"
+- "electronic health record machine learning explainable"
+
+## BROWSER AUTOMATION INSTRUCTIONS
+
+### Step 1: Navigate to Medical AI Vendor Directories
+- **Primary Sources**: HIMSS Healthcare IT Directory, AMIA AI Showcase, FDA 510(k) Database
+- **Search Terms**: "clinical decision support AI", "medical imaging AI FDA approved", "EHR analytics machine learning"
+- **Action**: Extract vendor names, product categories, and contact information
+
+### Step 2: Extract Tool Specifications
+- **Navigate to vendor websites** → Product documentation sections
+- **Extract**: Accuracy metrics, compliance certifications, integration capabilities
+- **Capture**: Screenshots of dashboard interfaces, sample outputs, workflow diagrams
+
+### Step 3: Cross-Reference with FDA 510(k) Database
+- **URL**: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+- **Search**: Tool name or vendor company name
+- **Extract**: 510(k) clearance number, clearance date, intended use statement, device classification
+
+### Step 4: Scrape Clinical Validation Publications
+- **Navigate to PubMed Central**: https://www.ncbi.nlm.nih.gov/pmc/
+- **Search Query Format**: "[Tool Name] AND (validation OR clinical trial OR prospective study)"
+- **Extract**: PMID, journal name, publication date, study design, sample size, performance metrics
+- **Prioritize**: Articles with AUC scores, sensitivity/specificity data, comparison to clinical standard of care
+
+### Step 5: Compare Pricing Models
+- **Check vendor pricing pages** for academic institutional licenses
+- **Look for**: Per-researcher pricing, departmental licenses, volume discounts
+- **Extract**: Base price, per-user costs, implementation fees, support contract costs
+- **Note**: Whether pricing is publicly available or requires contact sales
+
+## OUTPUT FORMAT REQUIREMENTS
+
+Structure all discovered tools in the following JSON schema for Vector/Graph DB ingestion:
+
+```json
+{
+  "tool_id": "unique_identifier",
+  "tool_name": "Product Name",
+  "vendor": "Company Name",
+  "category": "medical_literature_ai|clinical_data_analysis|drug_discovery|regulatory_compliance|research_writing",
+  "persona_match": "healthcare_research_scientist_001",
+  "use_cases": ["systematic_review", "clinical_prediction", "medical_imaging", "grant_writing", "drug_repurposing"],
+
+  "compliance": {
+    "fda_cleared": true|false,
+    "fda_510k_number": "K123456",
+    "hipaa_compliant": true|false,
+    "hipaa_documentation_url": "URL",
+    "irb_support": true|false,
+    "gxp_compliant": true|false
+  },
+
+  "validation": {
+    "peer_reviewed_studies": [
+      {
+        "pmid": "12345678",
+        "journal": "Journal Name",
+        "publication_date": "2024-01-15",
+        "study_type": "prospective|retrospective|meta_analysis",
+        "sample_size": 1000,
+        "performance_metrics": {
+          "auc": 0.92,
+          "sensitivity": 0.88,
+          "specificity": 0.94,
+          "accuracy": 0.91
+        }
+      }
+    ],
+    "clinical_validation_level": "high|medium|low"
+  },
+
+  "integration": {
+    "ehr_systems": ["Epic", "Cerner", "REDCap"],
+    "data_formats": ["HL7", "FHIR", "DICOM", "CSV"],
+    "api_available": true|false,
+    "deployment_options": ["cloud", "on_premise", "hybrid"]
+  },
+
+  "technical_specs": {
+    "accuracy_benchmark": ">98%",
+    "inference_latency_ms": 2000,
+    "explainability_methods": ["SHAP", "LIME", "attention_maps"],
+    "model_transparency": "high|medium|low"
+  },
+
+  "pricing": {
+    "model": "per_user|per_study|institutional_license",
+    "academic_pricing_available": true|false,
+    "estimated_annual_cost_range": "$10,000-$50,000",
+    "free_trial": true|false
+  },
+
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "https://vendor.com/product",
+    "documentation_url": "https://docs.vendor.com",
+    "last_updated": "2025-10-06",
+    "confidence_score": 0.95
+  }
+}
+```
+
+## QUALITY ASSURANCE CHECKLIST
+
+Before submitting each tool to the database, verify:
+- [ ] FDA clearance status confirmed (if applicable for diagnostic/clinical tools)
+- [ ] HIPAA compliance documentation reviewed
+- [ ] At least one peer-reviewed validation study identified
+- [ ] Integration capabilities clearly documented
+- [ ] Pricing information extracted (or marked as "contact sales")
+- [ ] Accuracy benchmarks verified from independent sources (not just vendor claims)
+- [ ] All required JSON fields populated
+- [ ] Confidence score assigned based on evidence quality
+
+## SUCCESS METRICS
+- Discover minimum 15 tools per category (75 total tools)
+- 80% of discovered tools have FDA clearance or HIPAA compliance documentation
+- 90% have peer-reviewed validation studies or case studies
+- 100% have structured JSON output matching schema
+- Confidence scores average ≥0.85 across all discoveries
+
+## NOTES FOR AI AGENT
+- Prioritize tools with strongest clinical validation evidence
+- Be skeptical of vendor accuracy claims without independent validation
+- Cross-reference multiple sources for compliance and certification claims
+- Flag tools with missing critical compliance documentation
+- Provide detailed reasoning for confidence scores below 0.80
+- Include alternative tool recommendations if primary searches yield insufficient results

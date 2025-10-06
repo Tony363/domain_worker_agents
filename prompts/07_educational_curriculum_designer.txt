@@ -1,0 +1,115 @@
+# AI Agent Instruction Prompt: Educational Curriculum Designer AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Instructional Design & Learning Experience Director
+**Industry**: Education & EdTech
+**Organization Type**: University Learning Innovation Center + K-12 Consulting
+**Experience Level**: Advanced (11 years curriculum development, learning analytics)
+**Persona ID**: educational_curriculum_designer_001
+
+## SEARCH MISSION
+Discover AI tools for instructional designers focused on adaptive learning paths, automated assessment generation, content accessibility (WCAG 2.1 AA), learning analytics with student success prediction, and curriculum alignment with Common Core/NGSS standards.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Adaptive Learning Platforms** - Personalized paths, skill gap analysis, mastery-based progression
+2. **Assessment Generation** - Quiz/test creation, rubric development, Bloom's taxonomy alignment
+3. **Content Accessibility** - Alt-text, closed captioning, reading level adaptation, UDL compliance
+4. **Learning Analytics AI** - Performance prediction, dropout risk, engagement tracking
+5. **Course Design Assistants** - Learning objective generation, standards alignment, scaffolding
+
+## PRIMARY SEARCH QUERIES
+1. "Adaptive learning platforms with AI-powered personalized learning paths for K-12 higher education"
+2. "Automated assessment generation tools with Bloom's taxonomy alignment for curriculum design"
+3. "Content accessibility AI with WCAG compliance for universal design learning education"
+4. "Learning analytics platforms with student success prediction and early warning systems"
+5. "Curriculum alignment tools with Common Core NGSS standards mapping for instructional design"
+
+## CRITICAL REQUIREMENTS
+- ✅ Pedagogical Validity: Evidence-based learning science, Bloom's taxonomy alignment
+- ✅ Accessibility: WCAG 2.1 AA, Section 508, UDL compliance
+- ✅ Privacy: FERPA, COPPA (K-12), student data protection
+- ✅ Integration: Canvas, Blackboard, Moodle, Google Classroom connectivity
+
+## HIGH PRIORITY
+- 🎯 Personalization: Adaptive paths, differentiated instruction support
+- 📊 Analytics: Performance dashboards, predictive modeling, intervention alerts
+- 🔄 Content Curation: Standards-aligned resources, OER integration
+- ⚡ Efficiency: Rapid course development, automated content updates
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "adaptive_learning_platforms|assessment_generation|content_accessibility|learning_analytics|course_design_assistants",
+  "persona_match": "educational_curriculum_designer_001",
+  "use_cases": ["adaptive_learning", "assessment_creation", "accessibility_enhancement", "learning_analytics", "standards_alignment"],
+  "pedagogical_compliance": {
+    "learning_science_based": true|false,
+    "blooms_taxonomy_alignment": true|false,
+    "cognitive_load_theory": true|false,
+    "evidence_based": true|false
+  },
+  "accessibility": {
+    "wcag_2_1_aa_compliant": true|false,
+    "section_508_compliant": true|false,
+    "udl_guidelines": true|false,
+    "alt_text_generation": true|false,
+    "closed_captioning": true|false,
+    "reading_level_adaptation": true|false
+  },
+  "privacy_compliance": {
+    "ferpa_compliant": true|false,
+    "coppa_compliant": true|false,
+    "data_anonymization": true|false,
+    "consent_management": true|false
+  },
+  "integration": {
+    "lms_platforms": ["Canvas", "Blackboard", "Moodle", "Google_Classroom"],
+    "sis_integration": true|false,
+    "lti_support": true|false,
+    "api_available": true|false
+  },
+  "analytics_capabilities": {
+    "student_success_prediction": true|false,
+    "dropout_risk_identification": true|false,
+    "engagement_tracking": true|false,
+    "intervention_recommendations": true|false
+  },
+  "case_studies": [
+    {
+      "institution_type": "K12|community_college|university",
+      "results": "18% improvement in student outcomes, 25% faster course dev"
+    }
+  ],
+  "pricing": {
+    "model": "per_seat|per_course|institutional_license",
+    "academic_pricing": true|false,
+    "estimated_annual_cost": "$5,000-$50,000",
+    "free_tier_educators": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.86
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 3 years (2022-2025)
+- **Sources**: EdSurge, Chronicle Higher Ed, EdTech Product Index, QM rubric
+- **Evidence**: Peer-reviewed ed research, efficacy studies with learning outcomes
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to EdSurge Product Index, LMS marketplaces
+2. Extract pedagogical frameworks, accessibility features, integration capabilities
+3. Cross-reference Common Core, NGSS, QM rubric standards
+4. Scrape learning outcome improvements, accessibility compliance, student success metrics
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 90% have WCAG/Section 508 compliance
+- 80% have LMS integration (Canvas/Blackboard)
+- Confidence scores average ≥0.86

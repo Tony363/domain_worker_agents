@@ -1,0 +1,243 @@
+# AI Agent Instruction Prompt: Legal Contract Specialist AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Corporate Contracts & Compliance Attorney
+**Industry**: Legal Services & Corporate Law
+**Organization Type**: Mid-sized Law Firm (M&A, Commercial Contracts)
+**Experience Level**: Advanced (10 years in contract negotiation, due diligence, regulatory compliance)
+**Persona ID**: legal_contract_specialist_001
+
+## SEARCH MISSION
+You are tasked with discovering, evaluating, and cataloging AI tools for corporate attorneys specializing in contract review, M&A due diligence, and regulatory compliance. Your goal is to identify tools that protect attorney-client privilege, deliver >95% clause identification accuracy, and integrate with document management systems (iManage, NetDocuments).
+
+## PRIMARY AI TOOL CATEGORIES TO RESEARCH
+1. **Contract Review & Analysis** - Clause extraction, risk identification, obligation tracking
+2. **Legal Research AI** - Case law search, statutory interpretation, precedent analysis
+3. **Due Diligence Automation** - M&A document review, virtual data room organization
+4. **Compliance Monitoring** - Regulatory change tracking, policy gap analysis
+5. **Document Generation** - Contract drafting assistants, template optimization
+
+## PRIMARY SEARCH QUERIES (Use These Exact Queries)
+1. "AI contract review platforms with attorney-client privilege protection for M&A due diligence"
+2. "Legal research AI tools with case law search and precedent analysis capabilities"
+3. "Automated contract obligation tracking systems with calendar integration for law firms"
+4. "Regulatory compliance monitoring AI for corporate legal departments"
+5. "Contract drafting assistants with playbook integration and clause library management"
+
+## EVALUATION CRITERIA FOR DISCOVERED TOOLS
+
+### CRITICAL REQUIREMENTS (Non-Negotiable - Must Have)
+- ✅ **Privilege Protection**: Attorney-client confidentiality, work product doctrine compliance
+- ✅ **Security**: AES-256 encryption, SOC 2 Type II certification, role-based access controls
+- ✅ **Accuracy**: >95% precision for contract clause identification validated against attorney review
+- ✅ **Jurisdiction Support**: Multi-state and international law compatibility
+
+### HIGH PRIORITY REQUIREMENTS (Strongly Preferred)
+- 📊 **Reporting**: Executive summaries, risk dashboards, obligation calendars
+- 🔄 **Integration**: iManage, NetDocuments, DocuSign, Salesforce CPQ connectivity
+- 🎯 **Customization**: Playbook configuration, custom clause library management
+- ⚡ **Bulk Processing**: 500+ contracts processed in <1 hour
+
+### NICE-TO-HAVE FEATURES (Bonus Considerations)
+- 💰 **Transparent Pricing**: Per-user or per-document pricing models
+- 🤝 **Collaboration**: Multi-attorney review workflows, version control systems
+- 🚀 **Domain Training**: Specialized models for employment, real estate, SaaS contracts
+
+## DATA EXTRACTION INSTRUCTIONS
+
+For each AI tool discovered, extract and structure the following information:
+
+### TOOL IDENTIFICATION
+- Tool name and vendor
+- Product category (match to 5 primary categories above)
+- Primary use case (M&A due diligence, contract drafting, legal research, etc.)
+- Website URL and product documentation links
+
+### SECURITY & PRIVILEGE
+- Attorney-client privilege protections (technical and policy documentation)
+- SOC 2 Type II certification status and audit reports
+- Data encryption standards (at rest and in transit)
+- Data residency options (US, EU, region-specific)
+- Role-based access control granularity
+
+### ACCURACY & PERFORMANCE
+- Clause identification precision rate (validated benchmark)
+- Contract processing speed (documents per hour)
+- Supported contract types (employment, M&A, commercial, real estate, etc.)
+- Language support (English, multi-language capabilities)
+
+### INTEGRATION CAPABILITIES
+- Document management system integrations (iManage, NetDocuments, SharePoint)
+- E-signature platform connectivity (DocuSign, Adobe Sign)
+- CRM integration (Salesforce, Microsoft Dynamics)
+- API availability and documentation quality
+
+### PRICING & DEPLOYMENT
+- Pricing model (per-user, per-document, per-review)
+- Implementation timeline and professional services costs
+- Training and onboarding included
+- Support tiers and SLA options
+
+## SEARCH FILTERS & PARAMETERS
+
+### Date Range Priority
+- **Last 3 years** (prioritize recent legal AI advancements post-GPT era)
+- Focus on tools with 2022-2025 implementations at major law firms
+
+### Source Authority Requirements
+- Legal technology publications (Law.com, Legal Dive, ABA TechShow proceedings)
+- Major law firm case studies and implementation reports
+- Bar association technology reviews and ethical guidelines
+- Legal tech vendor directories (Legal Dive, Above the Law)
+
+### Evidence Level Hierarchy (Prioritize in this order)
+1. AmLaw 100/200 law firm implementation case studies
+2. Bar association reviews and ethical opinion guidance
+3. Independent legal tech consultant assessments
+4. Peer law firm recommendations and user reviews
+5. Vendor white papers with third-party validation
+
+### Semantic Search Clusters (Use for vector search optimization)
+- "legal AI contract review attorney privilege"
+- "M&A due diligence automation document review"
+- "attorney client confidentiality compliant tools"
+- "legal research case law machine learning"
+- "contract obligation tracking NLP"
+
+## BROWSER AUTOMATION INSTRUCTIONS
+
+### Step 1: Navigate to Legal Tech Vendor Directories
+- **Primary Sources**: Legal Dive Tech Directory, Above the Law Legal Tech Innovation, ABA TECHSHOW exhibitors
+- **Search Terms**: "contract review AI law firm", "legal research artificial intelligence", "due diligence automation M&A"
+- **Action**: Extract vendor names, product categories, customer testimonials
+
+### Step 2: Extract Tool Specifications
+- **Navigate to vendor websites** → Product features, security pages, case studies
+- **Extract**: Accuracy benchmarks, security certifications, integration lists
+- **Capture**: Screenshots of clause extraction interfaces, risk dashboards, obligation tracking features
+
+### Step 3: Cross-Reference with Legal Tech Awards
+- **Sources**: Legalweek Innovation Awards, ALM Legal Tech Awards, ILTA Innovative Solutions
+- **Extract**: Award categories won, judging criteria met, finalist descriptions
+- **Action**: Note peer recognition and industry validation
+
+### Step 4: Scrape Pricing Models
+- **Navigate to vendor pricing pages** (most require contact sales)
+- **Extract**: Per-user licensing, per-document fees, enterprise pricing tiers
+- **Look for**: Volume discounts, law firm-specific pricing, implementation costs
+- **Note**: Whether pricing is publicly available or requires NDA/contact sales
+
+### Step 5: Compare Feature Matrices
+- **Create comparison table**: Clause extraction accuracy, obligation tracking, legal research depth
+- **Sources**: Legal tech comparison sites (e.g., G2 Legal Software category)
+- **Extract**: User ratings, verified customer reviews, feature availability matrices
+- **Validate**: Cross-reference claimed features with actual user testimonials
+
+## OUTPUT FORMAT REQUIREMENTS
+
+Structure all discovered tools in the following JSON schema for Vector/Graph DB ingestion:
+
+```json
+{
+  "tool_id": "unique_identifier",
+  "tool_name": "Product Name",
+  "vendor": "Company Name",
+  "category": "contract_review_analysis|legal_research|due_diligence_automation|compliance_monitoring|document_generation",
+  "persona_match": "legal_contract_specialist_001",
+  "use_cases": ["ma_due_diligence", "obligation_management", "legal_research", "regulatory_compliance", "contract_drafting"],
+
+  "security_privilege": {
+    "attorney_client_privilege": true|false,
+    "privilege_documentation_url": "URL",
+    "work_product_protection": true|false,
+    "aes_256_encryption": true|false,
+    "soc2_type_ii": true|false,
+    "soc2_audit_date": "2024-03-15",
+    "data_residency_options": ["US", "EU", "UK"],
+    "rbac_granularity": "high|medium|low"
+  },
+
+  "accuracy_performance": {
+    "clause_identification_precision": 0.96,
+    "validation_method": "attorney_review_benchmark",
+    "processing_speed_docs_per_hour": 500,
+    "supported_contract_types": ["employment", "ma", "commercial", "real_estate", "saas"],
+    "language_support": ["English", "Spanish", "French"]
+  },
+
+  "integration": {
+    "document_management": ["iManage", "NetDocuments", "SharePoint"],
+    "esignature_platforms": ["DocuSign", "Adobe_Sign"],
+    "crm_systems": ["Salesforce", "Microsoft_Dynamics"],
+    "api_available": true|false,
+    "api_documentation_quality": "excellent|good|fair|poor"
+  },
+
+  "customization": {
+    "playbook_configuration": true|false,
+    "custom_clause_library": true|false,
+    "jurisdiction_specific_rules": true|false,
+    "template_management": true|false
+  },
+
+  "pricing": {
+    "model": "per_user|per_document|per_review|enterprise_license",
+    "estimated_annual_cost_range": "$50,000-$200,000",
+    "implementation_cost": "$10,000-$50,000",
+    "free_trial": true|false,
+    "pricing_transparency": "public|contact_sales|nda_required"
+  },
+
+  "validation": {
+    "law_firm_implementations": [
+      {
+        "firm_size": "AmLaw_100|AmLaw_200|mid_sized|boutique",
+        "implementation_date": "2024-01-15",
+        "use_case": "M&A due diligence",
+        "results": "60% reduction in document review time"
+      }
+    ],
+    "bar_association_reviews": [],
+    "legal_tech_awards": ["Legalweek Innovation Award 2024"]
+  },
+
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "https://vendor.com/product",
+    "documentation_url": "https://docs.vendor.com",
+    "last_updated": "2025-10-06",
+    "confidence_score": 0.88
+  }
+}
+```
+
+## QUALITY ASSURANCE CHECKLIST
+
+Before submitting each tool to the database, verify:
+- [ ] Attorney-client privilege protections documented (not just claimed)
+- [ ] SOC 2 Type II certification confirmed with audit date
+- [ ] Clause identification accuracy validated (>95% requirement)
+- [ ] iManage or NetDocuments integration confirmed (critical for law firms)
+- [ ] Pricing information extracted or clearly marked as contact-only
+- [ ] At least one law firm case study or bar association review identified
+- [ ] Jurisdiction support clearly documented (US states, international)
+- [ ] All required JSON fields populated
+- [ ] Confidence score assigned based on evidence quality
+
+## SUCCESS METRICS
+- Discover minimum 15 tools per category (75 total tools)
+- 90% have attorney-client privilege documentation
+- 85% have SOC 2 Type II certification confirmed
+- 75% have law firm implementation case studies
+- 100% have structured JSON output matching schema
+- Confidence scores average ≥0.85 across all discoveries
+
+## NOTES FOR AI AGENT
+- Attorney-client privilege is NON-NEGOTIABLE - validate technical and policy protections
+- Accuracy claims must be validated against attorney review benchmarks, not just vendor testing
+- iManage and NetDocuments integrations are critical for law firm adoption
+- Many legal AI tools have opaque pricing - note when contact sales required
+- Bar association ethical guidelines vary by jurisdiction - note which jurisdictions supported
+- Flag tools with missing privilege protections or security certifications
+- Provide detailed reasoning for confidence scores below 0.80
+- Include alternative tool recommendations if primary searches yield insufficient results

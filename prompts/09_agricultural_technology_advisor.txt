@@ -1,0 +1,109 @@
+# AI Agent Instruction Prompt: Agricultural Technology Advisor AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Precision Agriculture & Sustainability Consultant
+**Industry**: Agriculture & AgriTech
+**Organization Type**: Agricultural Extension Services + Private Consulting
+**Experience Level**: Advanced (13 years agronomy, precision agriculture, sustainable farming)
+**Persona ID**: agricultural_technology_advisor_001
+
+## SEARCH MISSION
+Discover AI tools for precision agriculture advisors focused on crop yield prediction (±10% accuracy), variable rate application prescriptions, computer vision pest/disease detection (>90% precision), climate-resilient planting strategies, and harvest timing optimization with John Deere/Climate FieldView integration.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Crop Yield Prediction** - Weather modeling, soil health analysis, multi-season forecasting
+2. **Precision Agriculture** - Variable rate application, prescription generation, equipment optimization
+3. **Pest & Disease Detection** - Computer vision plant pathology, early warning, treatment recommendations
+4. **Climate & Weather AI** - Hyperlocal forecasting, extreme weather prediction, planting window optimization
+5. **Supply Chain Optimization** - Harvest timing, logistics planning, commodity price forecasting
+
+## PRIMARY SEARCH QUERIES
+1. "AI crop yield prediction platforms with soil health analysis for precision agriculture"
+2. "Variable rate application prescription tools with equipment integration for farming"
+3. "Computer vision plant disease detection AI with early warning systems for agriculture"
+4. "Climate forecasting tools with planting optimization for sustainable farming practices"
+5. "Harvest timing optimization AI with commodity price forecasting for supply chain coordination"
+
+## CRITICAL REQUIREMENTS
+- ✅ Agronomic Validity: Crop science accuracy, peer-reviewed model validation
+- ✅ Accuracy: Yield predictions ±10%, disease detection >90% precision
+- ✅ Geographic Resolution: Field-level (sub-acre) spatial analysis
+- ✅ Integration: John Deere Operations, Climate FieldView, Trimble, Raven equipment APIs
+
+## HIGH PRIORITY
+- 📊 Reporting: Field performance dashboards, sustainability metrics, ROI calculators
+- ⚡ Timeliness: Real-time alerts for pest outbreaks, weather events, irrigation needs
+- 🌱 Sustainability: Carbon footprint tracking, water use efficiency, soil health monitoring
+- 🔄 Decision Support: Prescription generation, treatment recommendations, scenario planning
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "crop_yield_prediction|precision_agriculture|pest_disease_detection|climate_weather_ai|supply_chain_optimization",
+  "persona_match": "agricultural_technology_advisor_001",
+  "use_cases": ["yield_forecasting", "variable_rate_application", "disease_detection", "climate_adaptation", "harvest_optimization"],
+  "agronomic_validation": {
+    "peer_reviewed_studies": true|false,
+    "university_research_partnerships": ["Iowa_State", "UC_Davis", "USDA_ARS"],
+    "crop_science_accuracy": true|false,
+    "field_trial_results": true|false
+  },
+  "accuracy_performance": {
+    "yield_prediction_margin_percentage": 10,
+    "disease_detection_precision": 0.92,
+    "geographic_resolution": "sub_acre|field_level|farm_level",
+    "supported_crops": ["corn", "soybeans", "wheat", "cotton", "specialty_crops"]
+  },
+  "integration": {
+    "farm_management": ["John_Deere_Operations", "Climate_FieldView", "Granular"],
+    "equipment_connectivity": ["Trimble", "Raven", "AgLeader"],
+    "iot_sensors": true|false,
+    "prescription_map_export": true|false,
+    "api_available": true|false
+  },
+  "sustainability_metrics": {
+    "carbon_footprint_tracking": true|false,
+    "water_use_efficiency": true|false,
+    "soil_health_monitoring": true|false,
+    "regenerative_ag_support": true|false
+  },
+  "case_studies": [
+    {
+      "farm_size": "1000_5000_acres",
+      "crop_type": "row_crops|specialty",
+      "results": "12% yield increase, 18% input cost reduction, 25% water savings"
+    }
+  ],
+  "pricing": {
+    "model": "per_acre|per_farm|subscription",
+    "estimated_annual_cost_per_acre": "$3-$15",
+    "free_trial": true|false,
+    "agronomist_support_included": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.87
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 3 years (2022-2025 AgriTech innovation)
+- **Sources**: Precision Ag, AgFunder News, university extension research
+- **Evidence**: Field trial results, peer-reviewed agronomic studies, ROI case studies
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to AgFunder, Farm Equipment manufacturer directories
+2. Extract accuracy benchmarks, integration capabilities, geographic coverage
+3. Cross-reference land-grant university research, USDA studies
+4. Scrape yield improvements, input cost reductions, sustainability metrics
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 85% have John Deere or Climate FieldView integration
+- 70% have university research validation or field trial results
+- Confidence scores average ≥0.87

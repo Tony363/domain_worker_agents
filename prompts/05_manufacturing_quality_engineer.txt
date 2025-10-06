@@ -1,0 +1,104 @@
+# AI Agent Instruction Prompt: Manufacturing Quality Engineer AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Quality Assurance & Process Optimization Engineer
+**Industry**: Automotive & Aerospace Manufacturing
+**Organization Type**: Tier-1 Automotive Supplier
+**Experience Level**: Advanced (15 years Six Sigma, SPC, quality systems)
+**Persona ID**: manufacturing_quality_engineer_001
+
+## SEARCH MISSION
+Discover AI tools for manufacturing quality engineers focused on computer vision defect detection (>99.5% accuracy), predictive maintenance, root cause analysis, real-time SPC monitoring, and automated quality documentation with IATF 16949/ISO 9001 compliance.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Computer Vision Defect Detection** - Automated visual inspection, anomaly detection, surface defect classification
+2. **Predictive Maintenance** - Equipment failure prediction, condition monitoring, downtime optimization
+3. **Root Cause Analysis AI** - Failure mode analysis, Pareto optimization, correlation discovery
+4. **IoT Sensor Analytics** - Real-time SPC monitoring, process parameter optimization
+5. **Quality Documentation Automation** - PPAP/APQP generation, non-conformance tracking
+
+## PRIMARY SEARCH QUERIES
+1. "Computer vision defect detection systems for automotive manufacturing with IATF 16949 compliance"
+2. "Predictive maintenance AI platforms for CNC machines with IoT sensor integration"
+3. "Automated root cause analysis tools for quality defects in manufacturing Six Sigma"
+4. "Real-time statistical process control AI with MES SCADA integration"
+5. "Automated PPAP documentation generation for automotive quality management systems"
+
+## CRITICAL REQUIREMENTS
+- ✅ Accuracy: >99.5% defect detection, <0.1% false positive rate
+- ✅ Compliance: ISO 9001, IATF 16949, AS9100 traceability
+- ✅ Integration: MES, SCADA, ERP (SAP, Oracle), CMM systems
+- ✅ Reliability: 99.9% uptime for production-critical systems
+
+## HIGH PRIORITY
+- ⚡ Speed: <100ms inspection for 1000+ parts/hour lines
+- 📊 Reporting: SPC charts, quality dashboards, regulatory compliance reports
+- 🔄 Adaptability: Easy retraining for new geometries/defect types
+- 🎯 Explainability: Visual heatmaps, decision transparency
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "computer_vision_defect_detection|predictive_maintenance|root_cause_analysis|iot_sensor_analytics|quality_documentation_automation",
+  "persona_match": "manufacturing_quality_engineer_001",
+  "use_cases": ["visual_inspection", "predictive_maintenance", "root_cause_analysis", "spc_monitoring", "quality_documentation"],
+  "accuracy_compliance": {
+    "defect_detection_rate": 0.997,
+    "false_positive_rate": 0.0008,
+    "iso_9001_certified": true|false,
+    "iatf_16949_compliant": true|false,
+    "as9100_support": true|false,
+    "audit_trail": true|false
+  },
+  "integration": {
+    "mes_systems": ["Siemens_Opcenter", "Dassault_DELMIA"],
+    "erp_systems": ["SAP", "Oracle_ERP"],
+    "scada_systems": ["Wonderware", "Ignition"],
+    "inspection_equipment": ["CMM", "Vision_Systems"],
+    "api_available": true|false
+  },
+  "performance": {
+    "inspection_time_ms": 50,
+    "throughput_parts_per_hour": 2000,
+    "uptime_percentage": 99.9,
+    "retraining_time_hours": 4
+  },
+  "case_studies": [
+    {
+      "industry": "automotive|aerospace",
+      "results": "45% defect reduction, 60% faster inspection, $2M annual savings"
+    }
+  ],
+  "pricing": {
+    "model": "per_line|per_plant|enterprise_license",
+    "estimated_annual_cost": "$50,000-$250,000",
+    "roi_calculator_available": true|false,
+    "free_pilot": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.90
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 3 years (2022-2025 Industry 4.0 era)
+- **Sources**: IndustryWeek, Manufacturing.net, automotive OEM case studies
+- **Evidence**: Peer-reviewed engineering journals, ROI metrics
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to Automation World, Control Engineering vendor directories
+2. Extract accuracy benchmarks, integration capabilities, compliance certs
+3. Cross-reference VDA standards, AIAG guidelines
+4. Scrape defect reduction %, downtime improvements, ROI calculations
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 95% have ISO 9001/IATF 16949 documentation
+- 80% have automotive/aerospace case studies
+- Confidence scores average ≥0.88

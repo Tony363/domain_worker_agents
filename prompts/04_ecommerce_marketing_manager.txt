@@ -1,0 +1,100 @@
+# AI Agent Instruction Prompt: E-commerce Marketing Manager AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Digital Marketing & Growth Manager
+**Industry**: E-commerce & Direct-to-Consumer Retail
+**Organization Type**: Mid-market Online Retail ($50M ARR)
+**Experience Level**: Intermediate (7 years in performance marketing, customer acquisition, retention)
+**Persona ID**: ecommerce_marketing_manager_001
+
+## SEARCH MISSION
+Discover AI tools for e-commerce marketers focused on customer segmentation, automated ad creative generation, email personalization, and multi-channel campaign optimization with clear ROI attribution and Shopify/WooCommerce integration.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Customer Segmentation AI** - Behavioral clustering, predictive LTV, churn prediction
+2. **Content Generation** - Product descriptions, ad copy, email campaigns, social media
+3. **A/B Testing & Optimization** - Multivariate testing, CRO automation
+4. **Ad Campaign Management** - Automated bidding, creative optimization, multi-channel budget allocation
+5. **Personalization Engines** - Dynamic product recommendations, personalized email/web content
+
+## PRIMARY SEARCH QUERIES
+1. "AI customer segmentation tools with predictive LTV for e-commerce Shopify integration"
+2. "Automated ad creative generation platforms for Facebook Google Ads with multivariate testing"
+3. "Email personalization AI with Klaviyo integration for abandoned cart recovery"
+4. "Real-time product recommendation engines with revenue attribution for online retail"
+5. "Multi-channel ad budget optimization tools with automated bidding for Meta Google TikTok"
+
+## CRITICAL REQUIREMENTS
+- ✅ ROI Measurement: Revenue attribution, ROAS tracking, CAC metrics
+- ✅ Integration: Shopify, WooCommerce, Google Analytics, Meta/Google Ads
+- ✅ Speed: Real-time campaign adjustments (<5min latency)
+- ✅ Ease of Use: No-code interfaces for non-technical marketers
+
+## HIGH PRIORITY
+- 🎯 Personalization: Dynamic content based on user behavior
+- 📊 Reporting: Executive dashboards, campaign analytics, cohort analysis
+- ⚡ Automation: Trigger-based workflows, campaign optimization
+- 🔄 Testing: A/B testing frameworks, statistical significance
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "customer_segmentation|content_generation|ab_testing_optimization|ad_campaign_management|personalization_engines",
+  "persona_match": "ecommerce_marketing_manager_001",
+  "use_cases": ["customer_segmentation", "ad_creative_generation", "email_personalization", "product_recommendations", "budget_optimization"],
+  "roi_measurement": {
+    "revenue_attribution": true|false,
+    "roas_tracking": true|false,
+    "cac_calculation": true|false,
+    "cohort_analysis": true|false
+  },
+  "integration": {
+    "ecommerce_platforms": ["Shopify", "WooCommerce", "BigCommerce"],
+    "analytics": ["Google_Analytics", "Mixpanel"],
+    "ad_platforms": ["Meta_Ads", "Google_Ads", "TikTok_Ads"],
+    "email_platforms": ["Klaviyo", "Mailchimp", "SendGrid"],
+    "api_available": true|false
+  },
+  "performance": {
+    "real_time_processing": true|false,
+    "latency_minutes": 5,
+    "ease_of_use": "no_code|low_code|technical"
+  },
+  "case_studies": [
+    {
+      "client_size": "$10M-$100M ARR e-commerce",
+      "results": "35% ROAS improvement, 22% increase in LTV"
+    }
+  ],
+  "pricing": {
+    "model": "usage_based|flat_monthly|per_order",
+    "estimated_monthly_cost": "$500-$5,000",
+    "free_trial": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.85
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 2 years (2023-2025)
+- **Sources**: MarTech, AdWeek, Shopify App Store, G2 MarTech categories
+- **Evidence**: Case studies with ROAS metrics, vendor benchmarks
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to Shopify App Store, G2 MarTech categories
+2. Extract integration capabilities, pricing, customer reviews
+3. Scrape case studies for revenue lift %, ROAS improvements
+4. Compare segmentation algorithms, content generation quality, A/B testing frameworks
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 85% have Shopify/WooCommerce integration
+- 70% have case studies with ROAS metrics
+- Confidence scores average ≥0.85

@@ -1,0 +1,107 @@
+# AI Agent Instruction Prompt: Content Creator & Journalist AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Senior Digital Journalist & Content Strategist
+**Industry**: Media & Publishing
+**Organization Type**: Digital News Media Company
+**Experience Level**: Intermediate (9 years investigative reporting, multimedia storytelling)
+**Persona ID**: content_creator_journalist_001
+
+## SEARCH MISSION
+Discover AI tools for journalists and content creators focused on fact-checking, video editing automation, multi-platform content repurposing, audience engagement optimization, and multilingual localization with journalism ethics compliance.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Writing Assistants** - Long-form drafting, headline optimization, SEO content
+2. **Fact-Checking & Research AI** - Source verification, claim validation, citation discovery
+3. **Multimedia Generation** - AI video editing, podcast transcription, image generation
+4. **Audience Analytics** - Content performance prediction, engagement optimization, A/B testing
+5. **Translation & Localization** - Multi-language adaptation, cultural context preservation
+
+## PRIMARY SEARCH QUERIES
+1. "AI fact-checking tools for investigative journalism with source verification capabilities"
+2. "Video editing AI platforms with automated transcription for digital media content creators"
+3. "Multi-platform content repurposing tools with SEO optimization for news publishers"
+4. "Audience engagement prediction AI with headline testing for journalism analytics"
+5. "Multilingual content localization platforms with cultural context for international media"
+
+## CRITICAL REQUIREMENTS
+- ✅ Quality: Human-level coherence, factual accuracy, editorial standards
+- ✅ Ethics: Plagiarism detection, bias checking, transparent AI usage disclosure
+- ✅ Speed: Real-time assistance for breaking news (<5min for 500 words)
+- ✅ Attribution: Proper citation handling, source tracking, copyright compliance
+
+## HIGH PRIORITY
+- 📊 Analytics: Audience engagement prediction, content performance metrics
+- 🔄 Integration: WordPress, Medium, social media platforms, SEO tools
+- 🎨 Multimedia: Video, audio, image generation/editing capabilities
+- 🎯 Customization: Brand voice training, editorial tone preservation
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "writing_assistants|fact_checking_research|multimedia_generation|audience_analytics|translation_localization",
+  "persona_match": "content_creator_journalist_001",
+  "use_cases": ["investigative_research", "video_production", "content_adaptation", "audience_optimization", "multilingual_localization"],
+  "ethics_compliance": {
+    "plagiarism_detection": true|false,
+    "bias_checking": true|false,
+    "ai_transparency": true|false,
+    "copyright_compliance": true|false,
+    "source_attribution": true|false
+  },
+  "quality_performance": {
+    "coherence_level": "human_level|near_human|acceptable",
+    "factual_accuracy": "high|medium|low",
+    "speed_500_words_minutes": 5,
+    "editorial_standards": "spj_compliant|reuters_principles|custom"
+  },
+  "integration": {
+    "cms_platforms": ["WordPress", "Medium", "Ghost"],
+    "seo_tools": ["Ahrefs", "SEMrush", "Clearscope"],
+    "social_media": ["Hootsuite", "Buffer", "native_integrations"],
+    "analytics": ["Google_Analytics", "Parse.ly", "Chartbeat"]
+  },
+  "multimedia_capabilities": {
+    "video_editing": true|false,
+    "transcription_accuracy": 0.95,
+    "image_generation": true|false,
+    "podcast_production": true|false
+  },
+  "case_studies": [
+    {
+      "publication_type": "digital_news|magazine|blog",
+      "results": "50% faster content production, 35% engagement increase"
+    }
+  ],
+  "pricing": {
+    "model": "per_article|subscription_monthly|team_license",
+    "estimated_monthly_cost": "$50-$500",
+    "free_tier": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.82
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 2 years (2023-2025 generative AI era)
+- **Sources**: Nieman Lab, Poynter, journalism.co.uk, MediaShift
+- **Evidence**: Publisher case studies, journalism ethics board reviews
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to journalism tech directories, media innovation showcases
+2. Extract quality benchmarks, ethics compliance, integration capabilities
+3. Cross-reference SPJ Code of Ethics, Reuters principles
+4. Scrape production efficiency gains, engagement improvements
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 80% have ethics compliance features (plagiarism/bias detection)
+- 70% have publisher case studies
+- Confidence scores average ≥0.82

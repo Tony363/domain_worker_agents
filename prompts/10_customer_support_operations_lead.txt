@@ -1,0 +1,109 @@
+# AI Agent Instruction Prompt: Customer Support Operations Lead AI Tooling Search
+
+## PERSONA CONTEXT
+**Role**: Customer Support Operations & Experience Manager
+**Industry**: SaaS Technology & Enterprise Software
+**Organization Type**: B2B SaaS Company (5,000+ enterprise customers, 200K+ end users)
+**Experience Level**: Advanced (10 years customer success, support operations, service delivery)
+**Persona ID**: customer_support_operations_lead_001
+
+## SEARCH MISSION
+Discover AI tools for customer support leaders focused on intelligent chatbots (>40% L0/L1 deflection, >85% accuracy), real-time sentiment analysis with churn prediction, automated knowledge base management, agent productivity assistance, and workforce demand forecasting with Zendesk/Salesforce integration.
+
+## PRIMARY AI TOOL CATEGORIES
+1. **Intelligent Chatbot & Routing** - Multi-tier chatbot, intent classification, smart ticket routing
+2. **Sentiment Analysis & Escalation** - Real-time emotion detection, escalation prediction, CSAT forecasting
+3. **Knowledge Base AI** - Automated article generation, content gap detection, search optimization
+4. **Agent Assist & Productivity** - Real-time response suggestions, ticket summarization, QA automation
+5. **Workforce Management** - Demand forecasting, shift scheduling, agent performance analytics
+
+## PRIMARY SEARCH QUERIES
+1. "AI chatbot platforms with L0/L1 deflection and intent classification for enterprise customer support"
+2. "Real-time sentiment analysis tools with churn risk prediction for customer success operations"
+3. "Knowledge base AI with automated article generation and content gap analysis for self-service"
+4. "Agent assist platforms with real-time response suggestions and automated QA scoring"
+5. "Workforce management AI with demand forecasting and shift scheduling for support operations"
+
+## CRITICAL REQUIREMENTS
+- ✅ Deflection Performance: L0/L1 automation >40%, accuracy >85% for self-service
+- ✅ Integration: Zendesk, Salesforce Service Cloud, Intercom, Slack connectivity
+- ✅ Speed: Real-time agent assist (<2s latency), instant chatbot responses
+- ✅ Multilingual: Support for 10+ languages with localization
+
+## HIGH PRIORITY
+- 📊 Analytics: Deflection dashboards, CSAT correlation, agent performance metrics
+- ⚡ Automation: Ticket routing, escalation workflows, knowledge base updates
+- 🎯 Accuracy: Sentiment detection >90%, intent classification >85%
+- 🔄 Learning: Continuous model improvement from agent feedback, resolution data
+
+## OUTPUT JSON SCHEMA
+```json
+{
+  "tool_id": "unique_id",
+  "tool_name": "Product Name",
+  "vendor": "Company",
+  "category": "intelligent_chatbot_routing|sentiment_analysis_escalation|knowledge_base_ai|agent_assist_productivity|workforce_management",
+  "persona_match": "customer_support_operations_lead_001",
+  "use_cases": ["chatbot_automation", "sentiment_analysis", "knowledge_management", "agent_productivity", "workforce_planning"],
+  "deflection_performance": {
+    "l0_l1_deflection_rate": 0.45,
+    "chatbot_accuracy": 0.87,
+    "self_service_resolution_rate": 0.62,
+    "validation_method": "enterprise_saas_benchmark"
+  },
+  "integration": {
+    "helpdesk_platforms": ["Zendesk", "Salesforce_Service_Cloud", "Intercom", "Freshdesk"],
+    "communication_tools": ["Slack", "Microsoft_Teams"],
+    "crm_systems": ["Salesforce", "HubSpot"],
+    "api_available": true|false,
+    "webhook_support": true|false
+  },
+  "performance": {
+    "agent_assist_latency_ms": 1500,
+    "chatbot_response_time_ms": 200,
+    "multilingual_support": ["English", "Spanish", "French", "German", "Japanese", "Chinese"],
+    "concurrent_conversations": 1000
+  },
+  "analytics_capabilities": {
+    "sentiment_detection_accuracy": 0.92,
+    "intent_classification_accuracy": 0.88,
+    "churn_risk_prediction": true|false,
+    "csat_forecasting": true|false,
+    "agent_performance_metrics": true|false
+  },
+  "case_studies": [
+    {
+      "company_size": "5000+_enterprise_customers",
+      "results": "48% ticket deflection, 32% faster resolution, 15% CSAT improvement"
+    }
+  ],
+  "pricing": {
+    "model": "per_agent|per_ticket|per_conversation|enterprise_license",
+    "estimated_monthly_cost": "$5,000-$50,000",
+    "free_trial": true|false,
+    "implementation_included": true|false
+  },
+  "metadata": {
+    "date_discovered": "2025-10-06",
+    "source_url": "URL",
+    "confidence_score": 0.89
+  }
+}
+```
+
+## SEARCH FILTERS
+- **Date Range**: Last 2 years (2023-2025 conversational AI era)
+- **Sources**: Support Driven, Customer Service Summit, G2 Customer Support Software
+- **Evidence**: Enterprise SaaS case studies, deflection rate improvements, ROI metrics
+
+## BROWSER AUTOMATION STEPS
+1. Navigate to G2 Customer Support Software, Capterra directories
+2. Extract deflection rates, integration capabilities, multilingual support
+3. Cross-reference enterprise SaaS implementation case studies
+4. Scrape CSAT improvements, ticket volume reductions, agent productivity gains
+
+## SUCCESS METRICS
+- 75+ tools discovered (15 per category)
+- 90% have Zendesk or Salesforce integration
+- 80% have enterprise SaaS case studies with deflection metrics
+- Confidence scores average ≥0.89
